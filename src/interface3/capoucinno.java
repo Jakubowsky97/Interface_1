@@ -6,7 +6,7 @@ public class capoucinno extends coffee implements Ekspres {
 
     @Override
     public void makeCoffe() {
-        super.setName("capuccino");
+        super.setName("cappuccino");
         super.setAmmountOfWater(350);
         super.setWeightOfCoffeeBins(60);
         super.setAmmountOfMilk(80);
@@ -19,6 +19,7 @@ public class capoucinno extends coffee implements Ekspres {
 
     @Override
     public void makeDoubleCoffe() {
+        makeCoffe();
         super.setName("Double cappuccino");
         super.setAmmountOfWater(super.getAmmountOfWater() * 2);
         super.setWeightOfCoffeeBins(super.getWeightOfCoffeeBins() * 2);

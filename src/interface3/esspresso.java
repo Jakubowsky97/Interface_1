@@ -13,11 +13,12 @@ public class esspresso extends coffee implements Ekspres {
 
     @Override
     public void displayCoffee() {
-        System.out.println(super.getName() + ": ziarno" + super.getWeightOfCoffeeBins() + ", woda" + super.getAmmountOfWater());
+        System.out.println(super.getName() + ": ziarno " + super.getWeightOfCoffeeBins() + ", woda" + super.getAmmountOfWater());
     }
 
     @Override
     public void makeDoubleCoffe() {
+        makeCoffe();
         super.setName("Double espresso");
         super.setAmmountOfWater(super.getAmmountOfWater() * 2);
         super.setWeightOfCoffeeBins(super.getWeightOfCoffeeBins() * 2);
